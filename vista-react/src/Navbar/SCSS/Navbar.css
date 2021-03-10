@@ -16,10 +16,6 @@ body {
   background-color: var(--colorMyWhite);
 }
 
-.content {
-  height: 2000px;
-}
-
 :root {
   --colorHome:var(--colorMyWhite);
   --colorHotels:var(--colorMyWhite);

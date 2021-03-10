@@ -16,13 +16,23 @@ body {
   background-color: var(--colorMyWhite);
 }
 
-.content {
-  height: 2000px;
-}
-
 #containerHome {
   margin: auto;
   width: 80%;
   margin-top: 40px;
+}
+
+#containerHome div {
+  background-color: #E0E0E0;
+}
+
+p {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  font-family: "Gabriola" !important;
+}
+
+.MuiTab-wrapper {
+  font-weight: 1000;
 }
 /*# sourceMappingURL=Home.css.map */

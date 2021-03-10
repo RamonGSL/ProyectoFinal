@@ -13,7 +13,7 @@ import VpnKeyRoundedIcon from "@material-ui/icons/VpnKeyRounded";
 import AccountBoxRoundedIcon from "@material-ui/icons/AccountBoxRounded";
 import Dropdown from "react-bootstrap/Dropdown";
 import AccountCircleRoundedIcon from "@material-ui/icons/AccountCircleRounded";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "animate.css";
 //
 //import {Link} from 'react-router-dom';
@@ -55,7 +55,7 @@ const NavbarComponent = () => {
 
 
   return (
-    <Navbar className="Navbar" sticky="top" expand="lg">
+    <Navbar collapseOnSelect className="Navbar" sticky="top" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
       <Navbar.Collapse id="basic-navbar-nav">

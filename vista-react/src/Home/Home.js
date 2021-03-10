@@ -9,8 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import { createMuiTheme } from '@material-ui/core/styles';
-
+import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 
 const HomeComponent = () => {
 
@@ -46,18 +45,9 @@ const HomeComponent = () => {
     const [value, setValue] = React.useState(0);
     const theme = createMuiTheme({
         palette: {
-          primary: {
-            light: '#757ce8',
-            main: '#3f50b5',
-            dark: '#002884',
-            contrastText: '#fff',
-          },
-          new: {
-            light: '#BEB06B',
-            main: '#BEB06B',
-            dark: '#BEB06B',
-            contrastText: '#BEB06B',
-          },
+          primary:{
+            main: "#BEB06B"
+          }
         },
       });
 
@@ -71,12 +61,13 @@ const HomeComponent = () => {
 
   return (
     <div id="containerHome">
-    <Paper className={classes.root}>
+    <Paper className={classes.root} as="div">
+      <ThemeProvider theme={theme}>
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="new"
-        textColor="new"
+        indicatorColor="primary"
+        textColor = "primary" 
         centered
       >
         <Tab value={0} label="Who we are?" />
@@ -88,19 +79,28 @@ const HomeComponent = () => {
          index={value}
          onChangeIndex={handleChangeIndex}
         >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim temporibus aliquid accusantium eligendi at debitis officia distinctio, cum tempore dolorem, saepe eius, repellat consequuntur harum ab vero fugit quae.
+        <TabPanel  value={value} index={0} dir={theme.direction}>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam. 
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
         </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim temporibus aliquid accusantium eligendi at debitis officia distinctio, cum tempore dolorem, saepe eius, repellat consequuntur harum ab vero fugit quae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim temporibus aliquid accusantium eligendi at debitis officia distinctio, cum tempore dolorem, saepe eius, repellat consequuntur harum ab vero fugit quae.
+        <TabPanel  value={value} index={1} dir={theme.direction}>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.            
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+            
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim temporibus aliquid accusantium eligendi at debitis officia distinctio, cum tempore dolorem, saepe eius, repellat consequuntur harum ab vero fugit quae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim temporibus aliquid accusantium eligendi at debitis officia distinctio, cum tempore dolorem, saepe eius, repellat consequuntur harum ab vero fugit quae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim temporibus aliquid accusantium eligendi at debitis officia distinctio, cum tempore dolorem, saepe eius, repellat consequuntur harum ab vero fugit quae.
+        <TabPanel  value={value} index={2} dir={theme.direction}>
+           
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.           
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam molestias accusantium? Laudantium debitis facere, perferendis suscipit, facilis voluptate a blanditiis aspernatur, sint ipsa velit? Nisi obcaecati veniam libero magnam.
+            
         </TabPanel>
         </SwipeableViews>
+        </ThemeProvider>
     </Paper>
     </div>
     

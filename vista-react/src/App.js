@@ -19,12 +19,13 @@ function App() {
       </header>
     </div>
     </Router>*/
+    
     <div className="App">
-     <Navbar />
-     <div className="content">
-     <Home />
-     </div>
-  </div>
+      <Navbar />
+        <div className="content">
+            <Home />
+        </div>
+    </div>
   );
 }
 
