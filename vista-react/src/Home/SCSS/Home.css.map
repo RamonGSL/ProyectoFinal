@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,KAAK,CAAA;EACH,aAAa,CAAC,OAAC;EACf,WAAW,CAAA,OAAC;EACZ,kBAAkB,CAAC,OAAC;EACpB,cAAc,CAAA,OAAC;EACf,YAAY,CAAA,OAAC;CACd;;AAED,AAAA,CAAC,CAAA;EACC,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,UAAU;CACxB;;AACD,AAAA,IAAI,CAAA;EACF,gBAAgB,EAAC,mBAAmB;CACrC;;AACD;;;GAGG",
+    "sources": [
+        "Home.scss",
+        "../../SCSS/App.scss"
+    ],
+    "names": [],
+    "file": "Home.css"
+}

@@ -1,0 +1,23 @@
+:root {
+  --colorGolden:#BEB06B;
+  --colorGray:#47464A;
+  --colorSimpleWhite:#FFFFFF;
+  --colorMyWhite:#F9FAF6;
+  --colorBlack:#000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gabriola';
+}
+
+body {
+  background-color: var(--colorMyWhite);
+}
+
+/*
+.content{
+  margin-top: 20%;
+}*/
+/*# sourceMappingURL=Home.css.map */
