@@ -16,8 +16,13 @@ body {
   background-color: var(--colorMyWhite);
 }
 
-/*
-.content{
-  margin-top: 20%;
-}*/
+.content {
+  height: 2000px;
+}
+
+#containerHome {
+  margin: auto;
+  width: 80%;
+  margin-top: 40px;
+}
 /*# sourceMappingURL=Home.css.map */
