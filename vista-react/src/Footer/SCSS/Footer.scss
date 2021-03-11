@@ -1,0 +1,50 @@
+@import '../../SCSS/App.scss';
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    background-color:var(--colorGray);
+    display: flex;
+    flex-direction: row;
+    div{
+        width: 50%;
+        p{
+            color: var(--colorMyWhite);
+            width: 50%;
+            &:hover{
+                transition: color 0.4s linear 0.2s;
+                color: var(--colorGolden);
+                
+            }   
+        }
+        
+        .icon{
+            margin-top: 5px;
+            color: var(--colorMyWhite);
+            font-size: 35px;
+            margin-left: 10%;
+            @media (max-width:510px) {
+                margin-top: 10px;
+                font-size: 25px;                
+            }
+
+            &:hover{
+                transition: color 0.5s linear 0.2s;
+                color: var(--colorGolden);
+            }
+        }
+        
+    }
+    
+    
+}
+
+#containerIcons{
+    padding-left: 20%;
+    @media (max-width: 991.5px) {
+        padding-left: 0;
+       }
+}

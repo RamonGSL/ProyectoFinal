@@ -1,7 +1,7 @@
 import './SCSS/App.css';
 import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 import Home from './Home/Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
 //import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
 
 function App() {
@@ -24,7 +24,9 @@ function App() {
       <Navbar />
         <div className="content">
             <Home />
+            
         </div>
+        <Footer />
     </div>
   );
 }

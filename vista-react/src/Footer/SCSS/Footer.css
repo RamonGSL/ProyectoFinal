@@ -1,0 +1,83 @@
+:root {
+  --colorGolden:#BEB06B;
+  --colorGray:#47464A;
+  --colorSimpleWhite:#FFFFFF;
+  --colorMyWhite:#F9FAF6;
+  --colorBlack:#000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gabriola';
+}
+
+.App {
+  background-color: var(--colorMyWhite);
+  height: 100%;
+}
+
+.content {
+  min-height: 80vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+  background-color: var(--colorGray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer div {
+  width: 50%;
+}
+
+footer div p {
+  color: var(--colorMyWhite);
+  width: 50%;
+}
+
+footer div p:hover {
+  -webkit-transition: color 0.4s linear 0.2s;
+  transition: color 0.4s linear 0.2s;
+  color: var(--colorGolden);
+}
+
+footer div .icon {
+  margin-top: 5px;
+  color: var(--colorMyWhite);
+  font-size: 35px;
+  margin-left: 10%;
+}
+
+@media (max-width: 510px) {
+  footer div .icon {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+footer div .icon:hover {
+  -webkit-transition: color 0.5s linear 0.2s;
+  transition: color 0.5s linear 0.2s;
+  color: var(--colorGolden);
+}
+
+#containerIcons {
+  padding-left: 20%;
+}
+
+@media (max-width: 991.5px) {
+  #containerIcons {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

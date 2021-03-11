@@ -12,8 +12,13 @@
   font-family: 'Gabriola';
 }
 
-body {
+.App {
   background-color: var(--colorMyWhite);
+  height: 100%;
+}
+
+.content {
+  min-height: 80vh;
 }
 
 :root {
@@ -26,8 +31,8 @@ body {
 }
 
 .Navbar .Nav .NavLink1, .Navbar .Nav .NavLink2, .Navbar .Nav2 .NavButton, .Navbar .Nav2 .Dropdown .Dropdown_Toogle, .Navbar .Nav2 .Dropdown .Dropdown_Menu div .NavDropdownA, .Navbar .Nav2 .Dropdown .Dropdown_Menu div .NavDropdownB {
-  -webkit-transition: color 0.5s linear 0.2s;
-  transition: color 0.5s linear 0.2s;
+  -webkit-transition: color 0.4s linear 0.2s;
+  transition: color 0.4s linear 0.2s;
 }
 
 .Navbar {

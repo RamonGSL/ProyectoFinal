@@ -102,6 +102,9 @@ const HomeComponent = () => {
         </SwipeableViews>
         </ThemeProvider>
     </Paper>
+
+
+   
     </div>
     
   );

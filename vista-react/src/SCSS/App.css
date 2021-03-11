@@ -12,7 +12,12 @@
   font-family: 'Gabriola';
 }
 
-body {
+.App {
   background-color: var(--colorMyWhite);
+  height: 100%;
+}
+
+.content {
+  min-height: 80vh;
 }
 /*# sourceMappingURL=App.css.map */
