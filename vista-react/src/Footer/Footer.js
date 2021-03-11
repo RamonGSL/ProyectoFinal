@@ -7,15 +7,22 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const FooterComponent = () => {
-    let arrayAnimations = ['animate__shakeX','animate__bounce','animate__rubberBand','animate__pulse','animate__tada','animate__jello'];
+    let arrayAnimations = ['animate__shakeX','animate__bounce','animate__rubberBand','animate__pulse','animate__tada','animate__jello','animate__flash','animate__shakeY','animate__heartBeat'];
 
     const AplicateAnimation = (numberLink) => {
         console.log(numberLink);
-        let indexAnimation = Math.floor(Math.random() * 6);
+        let indexAnimation = Math.floor(Math.random() * 8);
         let icons = document.getElementsByClassName('icon');
         icons[numberLink].classList.add(arrayAnimations[indexAnimation]);
+        icons[numberLink].addEventListener("animationend", () =>{
+            icons[numberLink].classList.remove(arrayAnimations[indexAnimation]);
+        }, false);
     }
      
+    const OpenLink = (link) => {
+        window.open(link);
+    }
+
 
     return (  
         <footer>
@@ -25,22 +32,13 @@ const FooterComponent = () => {
 
             <div id="containerIcons">
                 
-                <a href="https://www.instagram.com/" r rel="noopener noreferrer">
-                    <InstagramIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(0)} />
-                </a>
-
-                <a href="https://twitter.com/" r rel="noopener noreferrer">
-                    <TwitterIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(1)} />
-                </a>
-
-                <a href="https://www.facebook.com/" r rel="noopener noreferrer">
-                    <FacebookIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(2)} />
-                </a>
-
-                 <a href="https://www.youtube.com/" r rel="noopener noreferrer">
-                     <YouTubeIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(3)} />
-                </a>
-
+                <ul>
+                    <InstagramIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(0)} onClick={()=> OpenLink("https://www.instagram.com/")}/>
+                    <TwitterIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(1)} onClick={()=> OpenLink("https://twitter.com/")}/>
+                    <FacebookIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(2)} onClick={()=> OpenLink("https://www.facebook.com/")}/>
+                    <YouTubeIcon className="icon animate__animated" onMouseOver={() => AplicateAnimation(3)} onClick={()=> OpenLink("https://www.youtube.com/")}/>
+                     
+                </ul>
             </div>
             
         </footer>

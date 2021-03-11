@@ -12,8 +12,13 @@
   font-family: 'Gabriola';
 }
 
-body {
+.App {
   background-color: var(--colorMyWhite);
+  height: 100%;
+}
+
+.content {
+  min-height: 80vh;
 }
 
 #containerHome {
@@ -27,25 +32,13 @@ body {
   background-color: #E0E0E0;
 }
 
-p {
-  font-size: 18px;
-  font-weight: 300 !important;
+#containerHome p {
+  font-size: 20px;
   font-family: "Gabriola" !important;
 }
 
-@media (max-width: 400px) {
-  p {
-    font-size: 10px !important;
-  }
-}
-
-.MuiTab-wrapper {
-  font-weight: 1000;
-}
-
-@media (max-width: 400px) {
-  .MuiTab-wrapper {
-    font-size: 8px !important;
-  }
+#containerHome .Carousel {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=Home.css.map */

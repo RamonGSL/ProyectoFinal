@@ -9,20 +9,17 @@
         background-color: #E0E0E0;
         
     }
+    p{
+        font-size: 20px;
+        font-family: "Gabriola" !important;
+    }
+
+    .Carousel{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 } 
 
-p{
-    font-size: 18px ;
-    font-weight: 300 !important;
-    font-family: "Gabriola" !important;
-    @media (max-width: 400px) {
-        font-size: 10px !important;
-       }
 
-}
-.MuiTab-wrapper{
-    font-weight: 1000;
-    @media (max-width: 400px) {
-        font-size: 8px !important;
-       }
-}
+
+  
