@@ -1,15 +1,19 @@
-:root {
-  --colorGolden:#BEB06B;
-  --colorGray:#47464A;
-  --colorSimpleWhite:#FFFFFF;
-  --colorMyWhite:#F9FAF6;
-  --colorBlack:#000000;
-}
-
 * {
   padding: 0;
   margin: 0;
   font-family: 'Gabriola';
+}
+
+:root {
+  --colorGolden:#BEB06B;
+  --colorGray:#47464A;
+  --colorSecondWhite:#E0E0E0;
+  --colorMyWhite:#F9FAF6;
+  --darkFont: #292626;
+  --colorSecondGray:#A19C9C;
+  --fontColor:black;
+  --backgroundColor:#A19C9C;
+  --borderUserZones:black;
 }
 
 .App {
@@ -21,100 +25,45 @@
   min-height: 80vh;
 }
 
-:root {
-  --colorHome:var(--colorMyWhite);
-  --colorHotels:var(--colorMyWhite);
-  --colorMode:var(--colorMyWhite);
-  --colorZoneUser:var(--colorMyWhite);
-  --colorRegister:var(--colorMyWhite);
-  --colorLogin:var(--colorMyWhite);
+.colorMode {
+  background-color: var(--backgroundColor) !important;
 }
 
-.Navbar .Nav .NavLink1, .Navbar .Nav .NavLink2, .Navbar .Nav2 .NavButton, .Navbar .Nav2 .Dropdown .Dropdown_Toogle, .Navbar .Nav2 .Dropdown .Dropdown_Menu div .NavDropdownA, .Navbar .Nav2 .Dropdown .Dropdown_Menu div .NavDropdownB {
+.fontColor {
+  color: var(--fontColor) !important;
+}
+
+.selectLink {
+  color: var(--colorGolden) !important;
+}
+
+@media (max-width: 991.5px) {
+  .UserZoneBorder {
+    border: 1.5px solid var(--borderUserZones) !important;
+  }
+}
+
+nav button, nav a {
   -webkit-transition: color 0.4s linear 0.2s;
   transition: color 0.4s linear 0.2s;
 }
 
-.Navbar {
-  background-color: var(--colorGray);
+#containerNavbar {
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
-.Navbar .Nav {
-  margin-left: 12px;
-}
-
-.Navbar .Nav .NavLink1 {
-  color: var(--colorHome) !important;
-}
-
-.Navbar .Nav .NavLink2 {
-  color: var(--colorHotels) !important;
-}
-
-.Navbar .Nav1 {
-  color: var(--colorMyWhite);
-  font-size: 24px;
-  -webkit-transition: color 0.5s linear 0.2s;
-  transition: color 0.5s linear 0.2s;
-  -webkit-transition: font-size 0.5s linear 0.2s;
-  transition: font-size 0.5s linear 0.2s;
-}
-
-.Navbar .Nav1:hover {
-  color: var(--colorGolden);
-  font-size: 26px;
-}
-
-.Navbar .Nav2 .NavButton {
-  background-color: transparent;
-  border: transparent;
-  color: var(--colorMode);
-}
-
-.Navbar .Nav2 .NavButton:hover {
-  background-color: transparent !important;
-}
-
-@media (max-width: 991.5px) {
-  .Navbar .Nav2 .NavButton {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-}
-
-.Navbar .Nav2 .Dropdown {
-  margin-right: 12px !important;
-}
-
-.Navbar .Nav2 .Dropdown .Dropdown_Toogle {
-  background-color: var(--colorGray) !important;
-  color: var(--colorZoneUser);
-  border: none !important;
-}
-
-.Navbar .Nav2 .Dropdown .Dropdown_Toogle:focus {
+nav button {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  border: none !important;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
 }
 
-.Navbar .Nav2 .Dropdown .Dropdown_Menu {
-  background-color: var(--colorGray) !important;
-}
-
-@media (max-width: 991.5px) {
-  .Navbar .Nav2 .Dropdown .Dropdown_Menu {
-    border: 1.5px solid var(--colorGolden);
-  }
-}
-
-.Navbar .Nav2 .Dropdown .Dropdown_Menu div .NavDropdownA {
-  color: var(--colorRegister);
-  background-color: var(--colorGray);
-}
-
-.Navbar .Nav2 .Dropdown .Dropdown_Menu div .NavDropdownB {
-  color: var(--colorLogin);
-  background-color: var(--colorGray);
+#title {
+  font-size: 22px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=Navbar.css.map */

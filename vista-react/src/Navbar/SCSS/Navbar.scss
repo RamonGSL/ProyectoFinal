@@ -1,115 +1,42 @@
 @import '../../SCSS/App.scss';
 
-:root{ 
-    --colorHome:var(--colorMyWhite);
-    --colorHotels:var(--colorMyWhite);
-    --colorMode:var(--colorMyWhite);
-    --colorZoneUser:var(--colorMyWhite);
-    --colorRegister:var(--colorMyWhite);
-    --colorLogin:var(--colorMyWhite);
+
+
+.selectLink{
+    color:var(--colorGolden) !important;
 }
+
+.UserZoneBorder{
+    @media (max-width: 991.5px) {
+        border: 1.5px solid var(--borderUserZones) !important;
+    }  
+}
+
 
 %transition{
     transition: color 0.4s linear 0.2s;
 }
 
-.Navbar {
-    background-color: var(--colorGray);
-    
-    .Nav {
-        margin-left: 12px;
+#containerNavbar{
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+nav{
+    button{
+        box-shadow:none !important;
+        border: none !important;
+        @extend %transition;
+        justify-content: left !important;
         
-        .NavLink1 {
-           
-            color: var(--colorHome)!important;
-            
-            @extend %transition;            
-           
-        }
-        .NavLink2 {
-            color: var(--colorHotels) !important;
-            
-            @extend %transition;
-
-        }
+    }
+    a{
+        @extend %transition;
     }
 
-    .Nav1{
-        color: var(--colorMyWhite);
-        font-size: 24px;
-        transition: color 0.5s linear 0.2s;
-        transition: font-size 0.5s linear 0.2s;
-        &:hover{
-            color:var(--colorGolden);
-            font-size: 26px;
-        }
-    }
+}
 
-    .Nav2 {
-
-        .NavButton {
-            background-color: transparent;
-            border: transparent;
-            color: var(--colorMode);
-            
-            @extend %transition;
-            &:hover{
-                background-color: transparent !important;               
-            }
-
-            @media (max-width: 991.5px) {
-             justify-content: left;
-            }
-
-        }
-
-        .Dropdown {
-            margin-right: 12px !important;
-          
-            .Dropdown_Toogle {
-                background-color: var(--colorGray) !important;
-                @extend %transition;
-                color: var(--colorZoneUser);
-                border: none !important;
-
-                &:focus{
-                    box-shadow: none !important;
-                }
-                
-            }
-            .Dropdown_Menu{
-                
-                background-color: var(--colorGray) !important;
-                
-                @media (max-width: 991.5px) {
-                    border: 1.5px solid var(--colorGolden);
-                }
-                
-                div{
-                    .NavDropdownA{
-                        color: var(--colorRegister);
-                        background-color: var(--colorGray);
-                        @extend %transition;
-
-                    }
-
-                    .NavDropdownB{
-                        color: var(--colorLogin);
-                        background-color: var(--colorGray);
-                        @extend %transition;
-
-
-                    }
-                }
-                
-            }
-
-    
-        }
-   
-      
-    }
-
-    
-
+#title{
+    font-size: 22px;
+    font-weight: 600;
 }

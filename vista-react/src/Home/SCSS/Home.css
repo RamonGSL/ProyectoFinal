@@ -1,15 +1,19 @@
-:root {
-  --colorGolden:#BEB06B;
-  --colorGray:#47464A;
-  --colorSimpleWhite:#FFFFFF;
-  --colorMyWhite:#F9FAF6;
-  --colorBlack:#000000;
-}
-
 * {
   padding: 0;
   margin: 0;
   font-family: 'Gabriola';
+}
+
+:root {
+  --colorGolden:#BEB06B;
+  --colorGray:#47464A;
+  --colorSecondWhite:#E0E0E0;
+  --colorMyWhite:#F9FAF6;
+  --darkFont: #292626;
+  --colorSecondGray:#A19C9C;
+  --fontColor:black;
+  --backgroundColor:#A19C9C;
+  --borderUserZones:black;
 }
 
 .App {
@@ -19,6 +23,14 @@
 
 .content {
   min-height: 80vh;
+}
+
+.colorMode {
+  background-color: var(--backgroundColor) !important;
+}
+
+.fontColor {
+  color: var(--fontColor) !important;
 }
 
 #containerHome {
